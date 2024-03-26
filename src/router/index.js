@@ -15,4 +15,13 @@ const router = createRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  // 페이지 로드 시 '/' 경로로 접근되었을 경우 '/AppPortfolio1' 라우터로 이동
+  if (to.path === '/') {
+    next('/AppPortfolio1');
+  } else {
+    next();
+  }
+});
+
 export default router;
