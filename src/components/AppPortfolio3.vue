@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>채팅 어플리케이션</h2>
-    <h5>주소 : https://friendtalk.shop</h5>
+    <h2>분실/조회 찾기</h2>
+    <h5>주소 : https://searchitem.vercel.app/</h5>
     <div v-if="loading" class="loading">로딩 중...</div>
     <iframe v-else :src="externalWebsiteUrl" width="100%" height="1000"></iframe>
   </div>
@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       loading: true, 
-      externalWebsiteUrl: 'https://friendtalk.shop' 
+      externalWebsiteUrl: 'https://searchitem.vercel.app' 
     };
   },
   mounted() {
